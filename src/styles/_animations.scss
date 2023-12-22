@@ -1,0 +1,43 @@
+/*animación pelota en sobre-la-web.html*/
+.football-animation {
+    width: 30px;
+    height: 25px;
+    margin-left: 20px;
+    animation: bounce 2.2s alternate infinite;
+    &:hover {
+        animation-play-state: paused;
+    }
+    @include md {
+        width: 35px;
+        height: 30px;
+    }
+    @include xl {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@keyframes bounce {
+    0% {
+      transform: translate(0, -200%) rotate(-50deg); 
+    }
+    20% {
+      transform: translate(0, 0) rotate(50deg);
+      margin-left: 35px;
+    }
+    40% {
+      transform: translate(0, -150%) rotate(50deg);
+    }
+    60% {
+      transform: translate(0, 0);
+      margin-left: 35px;
+    }
+    80% {
+      transform: translate(0, -130%);
+      margin-left: 30px;
+    }
+    100% {
+      transform: translate(0, 0) rotate(-50deg);
+      margin-left: 25px;
+    }
+}

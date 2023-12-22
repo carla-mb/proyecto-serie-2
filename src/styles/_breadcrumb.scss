@@ -1,0 +1,43 @@
+//estilos breadcrumb en todas las páginas de detalle
+
+.breadcrumb {
+    background-color: $secondary-color-o-transparent;
+    padding: 10px 16px;
+    margin-top: 10px;
+    list-style: none;
+    li {
+        display: inline;
+        font-size: 0.8rem;
+        font-family: $brand-font;
+        a {
+            color: $secondary-color-b;
+            text-decoration: none;
+            &:hover {
+                opacity: 0.7;
+            } 
+        } 
+    }
+    li+li:before {
+    padding: 5px;
+    color: black;
+    content: "/\00a0";
+    }  
+    @include md {
+        li {
+            font-size: 0.9rem;
+        }
+    }
+    @include lg {
+        padding: 15px 20px;
+        margin-top: 16px;
+        li {
+            font-size: 1rem;
+        }
+    }
+    @include xl {
+        li {
+            font-size: 1.1rem;
+            
+        }
+    }
+}

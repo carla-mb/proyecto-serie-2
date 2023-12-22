@@ -1,0 +1,71 @@
+.sticky-header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0 2px 4px 0 $main-color-transparent;
+    .brand {
+        display: flex;
+        background-image: linear-gradient(to right, $secondary-color-b 63%, $secondary-color-y 63%, $secondary-color-y 64%, $secondary-color-r 64%);
+        padding: 1rem 0;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 4rem; 
+            height: auto; 
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            font-style: italic;
+            font-family: $brand-font;
+            color: $light-color;
+            letter-spacing: -0.1rem;
+            span {
+                font-size: 1.1rem;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            @include sm {
+                font-size: 2.1rem;
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+            @include md {
+                font-size: 2.2rem;
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+            @include lg {
+                font-size: 2.4rem;
+                text-align: left;
+                /* padding-left: 100px; */
+                span {
+                    font-size: 1.5rem;
+                }   
+            }
+            @include xxl {
+                font-size: 2.6rem;
+                span {
+                    font-size: 1.7rem;
+                }   
+            }
+        }
+        @include lg {
+            justify-content: left; 
+            padding: 0.8rem 0;
+            padding-left: 100px; 
+            img {
+                width: 4.5rem;
+            }
+        }
+        @include xxl {
+            img {
+                width: 5rem;
+            }  
+        }
+    }
+} 

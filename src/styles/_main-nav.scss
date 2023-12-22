@@ -1,0 +1,56 @@
+.sticky-nav {
+    position: sticky;
+    z-index: 2;
+    top: 4.5rem;
+    box-shadow: 0 2px 4px 0 $main-color-transparent;
+    background-image: linear-gradient(to right, $secondary-color-b 63%, $secondary-color-y 63%, $secondary-color-y 64%, $secondary-color-r 64%);
+    ul {
+        list-style-type: none;
+        display: flex;
+        font-size: 0.65rem;
+        font-family: $body-font;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        li {
+            margin: 0.5rem;
+            padding:0;
+            a {
+                text-decoration: none;
+                color: $light-color;
+                text-shadow: 1px 1px 1px $text-shadow;
+                font-weight: bold;
+                &:hover {
+                    border-bottom: solid $light-color 1px;
+                }
+            }
+        }
+        @include sm {
+            font-size: 0.75rem;
+        }
+        @include md {
+            font-size: 0.85rem;
+        }
+        @include lg {
+            font-size: 0.95rem;
+            justify-content: left; 
+            padding-left: 100px; 
+            li {
+                margin: 1rem 1rem 1rem 0;
+            }
+        }
+        @include xl {
+            font-size: 1rem;
+        }
+        @include xxl {
+            font-size: 1.1rem;
+              
+        }
+    }
+    @include lg {
+        top: 4.8rem;
+    }
+    @include xxl {
+        top: 5.2rem; 
+    }
+}

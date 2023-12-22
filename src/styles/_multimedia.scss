@@ -1,0 +1,85 @@
+/*Contenido multimedia */
+.carousel {
+    margin: auto;
+    img {
+        height: 35vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    @include sm {
+        img {
+            height: 45vh;
+        } 
+    }
+    @include lg {
+        width: 80%;
+        img {
+            height: 50vh;
+        } 
+    }
+}
+
+figure {
+    text-align: center;
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .responsive-img.home-img  {
+        @include md {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    } 
+    figcaption {
+        font-size: 0.75rem;
+        a {
+            color: $secondary-color-b;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                color: $secondary-color-o;
+            }
+        }
+        @include sm {
+            font-size: 0.85rem;
+        }
+        @include lg {
+            font-size: 0.95rem;
+        }
+        @include xl {
+            font-size: 1.05rem;
+        }
+    }
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    .responsive-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+.a .divider {
+   margin-top: 20px;
+}
+
+/*máscara de bigotes en categorias.html*/
+.mask-img {
+    width: 100px;
+    height: auto;
+    @include md {
+        width: 120px;
+    }
+} 
