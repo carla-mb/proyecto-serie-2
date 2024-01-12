@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./media/richmond-favicon.ico" type="image/x-icon">
     <title>Ted Lasso Fans | Guiños navideños</title>
     <meta name="author" content="Carla Martin">
     <meta name="description" content="Explora curiosidades, lugares y momentos de Ted Lasso en esta comunidad de fans de la serie.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    </noscript>
     <link rel="stylesheet" href="./styles/styles.scss">
 </head>
 <body>
@@ -49,7 +52,9 @@
                     sizes="(min-width: 1200px) 1200px, (min-width: 768px) 768px"
                     src="media/destacada/navidad-1200.jpg"
                     alt="Roy, Keeley y la pequeña Phoebe en busca de un dentista por Navidad."
-                    class="responsive-img">
+                    class="responsive-img"
+                    width="1200"
+                    height="767">
             </figure>
             <p>No hay nada como una serie con un especial de Navidad, nunca decepcionan. Y es que es una época del año en la que las familias y amigos se juntan, cosa que también vemos en el episodio cuatro de la segunda temporada de Ted Lasso.
             <p>Cada grupo de personajes tiene una noche diferente, como si de un cuento de navidad se tratara.</p>
@@ -67,7 +72,9 @@
                             src="./media/detalles/Ted_Lasso_Photo_020403.jpg"
                             alt="Los jugadores del Richmond en celebrando la Navidad en casa de Higgins."
                             class="responsive-img"
-                            loading="lazy">
+                            loading="lazy"
+                            width="1200" 
+                            height="800">
                         </picture>
                         <figcaption>Cena en la mejor compañía posible | <a href="https://tv.apple.com/es/" target="_blank">Apple TV+</a></figcaption>
                     </figure>
@@ -78,7 +85,7 @@
                     <p> Se muestra al espectador un plano que va mostrando la longitud de la mesa de esta curiosa cena navideña. La escena se inspiró en una similar de la película muda <cite>Wings</cite> (1927). Esta fue específicamente solicitada por Jason Sudeikis, el actor que da vida a Ted Lasso.</p>
                     <p>Plano en el que se inspira la escena de la cena en casa de Higgins:</p>
                     <figure>
-                        <img src="./media/gifs/Wings-cafe-tracking-shot.webp" loading="lazy" alt="Plano que va pasando mesa a mesa y vemos la interacción de sus comensales." class="responsive-img">
+                        <img src="./media/gifs/Wings-cafe-tracking-shot-optimized.webp" width="600" height="344" loading="lazy" alt="Plano que va pasando mesa a mesa y vemos la interacción de sus comensales." class="responsive-img">
                         <figcaption><cite>Wings</cite> (1927) | <a href="https://www.paramountpictures.com/" target="_blank">Paramount Pictures</a></figcaption>
                     </figure>
                 </section>
@@ -105,7 +112,9 @@
                             src="./media/detalles/Ted_Lasso_Photo_020415.jpg"
                             alt="Phoebe junto a Roy y Keeley replicando la escena de los carteles en Love Actually."
                             class="responsive-img"
-                            loading="lazy">
+                            loading="lazy"
+                            width="1200" 
+                            height="599">
                     </picture>
                     <figcaption>Empieza como en la escena de la película | <a href="https://tv.apple.com/es/" target="_blank">Apple TV+</a></figcaption>
                 </figure>
@@ -143,8 +152,11 @@
         <hr>
         <div class="footer-brand">
             <img src = "media/logo/grey-scale-logo.svg" loading="lazy" alt="Logo de la página compuesto por las siglas de esta y el bigote del entrenador Ted Lasso">
-            <p>2023 &copy; Ted Lasso Fans | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
+            <p>&copy; Ted Lasso Fans 2023 - <span id="currentYear"></span> | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
         </div>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

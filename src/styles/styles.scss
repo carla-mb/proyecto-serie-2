@@ -52,7 +52,7 @@ main {
                 font-weight: 800;
                 color: $secondary-color-b;
                 &:hover {
-                    color: $secondary-color-o;
+                    color: $secondary-color-r;
                 }
             }
         }
@@ -160,7 +160,7 @@ main {
                 }
                 &:hover {
                     text-decoration: none;
-                    color: $secondary-color-o;   
+                    color: $secondary-color-r;   
                     &:before {
                         width: 40px; 
                         height: 40px;
@@ -389,7 +389,7 @@ blockquote {
                 text-decoration: none;
                 font-weight: bold;
                 &:hover {
-                    color: $secondary-color-o;
+                    color: $secondary-color-r;
                 }
             }
             @include sm {

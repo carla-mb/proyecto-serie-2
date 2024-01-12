@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/richmond-favicon.ico" type="image/x-icon">
     <title>Ted Lasso Fans | Categorías</title>
     <meta name="author" content="Carla Martin">
     <meta name="description" content="Explora curiosidades, lugares y momentos de Ted Lasso en esta comunidad de fans de la serie.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    </noscript>
     <link rel="stylesheet" href="./styles/styles.scss">
 </head>
 <body>
@@ -54,12 +58,14 @@
                             srcset="media/apple_tvplus-emmy-noms-2021_ted-lasso_07132021.webp"
                             type="image/webp">
                         <source
-                            srcset="media/apple_tvplus-emmy-noms-2021_ted-lasso_07132021-crop.jpg"
+                            srcset="media/apple_tvplus-emmy-noms-2021_ted-lasso_07132021-crop.webp"
                             type="image/webp">
                         <img
                             src="media/apple_tvplus-emmy-noms-2021_ted-lasso_07132021.jpg"
                             alt="Los protagonistas de la serie Ted Lasso de Apple TV."
-                            class="responsive-img">
+                            class="responsive-img"
+                            width="1200"
+                            height="675">
                     </picture>
                     <figcaption>Imagen promocional de la primera temporada de Ted Lasso | <a href="https://tv.apple.com/es/" target="_blank">Apple TV+</a>.</figcaption>
                 </figure>
@@ -68,7 +74,7 @@
                     <p>Descubre los sitios reales que inspiraron las escenas vistas en la serie y los cameos de famosos que te has podido perder.</p>
                     <ul class="category-list">
                         <li>
-                            <img src="./media/destacada/welcome-small.jpg" loading="lazy" alt="Ted sonriendo llegando al trabajo." class="mask-img">
+                            <img src="./media/destacada/welcome-small.jpg" width="100" height="70" loading="lazy" alt="Ted sonriendo llegando al trabajo." class="mask-img">
                             <a href="bienvenidos-a-richmond.html">¡Bienvenidos a Richmond!</a>
                         </li>                
                     </ul>
@@ -79,11 +85,11 @@
                     <p>Recopilación de momentos de la serie que nos han quedado grabados.</p>
                     <ul class="category-list">
                         <li>
-                            <img src="./media/destacada/dani-small.jpg" loading="lazy" alt="Dani siempre sonriendo." class="mask-img">
+                            <img src="./media/destacada/dani-small.jpg" width="100" height="70" loading="lazy" alt="Dani siempre sonriendo." class="mask-img">
                             <a href="football-is-life.html">Football is life</a>
                         </li>   
                         <li>
-                            <img src="./media/destacada/galletas-small.jpg" loading="lazy" alt="Ted entregando galletas a la Doctora Sharon." class="mask-img">
+                            <img src="./media/destacada/galletas-small.jpg" width="100" height="70" loading="lazy" alt="Ted entregando galletas a la Doctora Sharon." class="mask-img">
                             <a href="galletas-galletas-y-mas-galletas.html">Galletas, galletas, y... ¡más galletas!</a>
                         </li>               
                     </ul>
@@ -94,7 +100,7 @@
                     <p>Explora curiosas anécdotas de la serie y entérate sobre sus nominaciones y premios.</p>
                     <ul class="category-list">
                         <li>
-                            <img src="./media/destacada/curiosidades-small.jpg" loading="lazy" alt="Higgins, sorprendido, agarrando a sus dos perros." class="mask-img">
+                            <img src="./media/destacada/curiosidades-small.jpg" width="100" height="70" loading="lazy" alt="Higgins, sorprendido, agarrando a sus dos perros." class="mask-img">
                             <a href="cinco-cosas-que-no-sabias-de-ted-lasso.html">Cinco cosas que no sabías de Ted Lasso</a>
                         </li>                
                     </ul>
@@ -105,7 +111,7 @@
                     <p>Explora todos aquellos guiños o escenas que se te hayan podido escapar.</p>
                     <ul class="category-list">
                         <li>
-                            <img src="./media/destacada/navidad-small.jpg" loading="lazy" alt="Roy, Keeley y la pequeña Phoebe en busca de un dentista por Navidad." class="mask-img">
+                            <img src="./media/destacada/navidad-small.jpg" width="100" height="70" loading="lazy" alt="Roy, Keeley y la pequeña Phoebe en busca de un dentista por Navidad." class="mask-img">
                             <a href="guinos-navidenos.html">Guiños navideños</a>
                         </li>                
                     </ul>
@@ -134,8 +140,11 @@
         <hr>
         <div class="footer-brand">
             <img src = "media/logo/grey-scale-logo.svg" loading="lazy" alt="Logo de la página compuesto por las siglas de esta y el bigote del entrenador Ted Lasso">
-            <p>2023 &copy; Ted Lasso Fans | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
+            <p>&copy; Ted Lasso Fans 2023 - <span id="currentYear"></span> | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
         </div>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

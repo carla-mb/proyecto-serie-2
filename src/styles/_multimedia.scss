@@ -39,7 +39,7 @@ figure {
             text-decoration: none;
             font-weight: bold;
             &:hover {
-                color: $secondary-color-o;
+                color: $secondary-color-r;
             }
         }
         @include sm {
@@ -77,7 +77,6 @@ figure {
 
 /*máscara de bigotes en categorias.html*/
 .mask-img {
-    width: 100px;
     height: auto;
     @include md {
         width: 120px;

@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./media/richmond-favicon.ico" type="image/x-icon">
     <title>Ted Lasso Fans | ¡Bienvenidos a Richmond!</title>
     <meta name="author" content="Carla Martin">
     <meta name="description" content="Explora curiosidades, lugares y momentos de Ted Lasso en esta comunidad de fans de la serie.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    </noscript>
     <link rel="stylesheet" href="./styles/styles.scss">
+    <link rel="stylesheet" href="./styles/lite-yt-embed.css">
+    <script async src="./scripts/lite-yt-embed.js"></script>
 </head>
 <body>
     <div class="sticky-header">
@@ -49,7 +54,9 @@
                 sizes="(min-width: 1200px) 1200px, (min-width: 768px) 768px, 576px"
                 src="media/destacada/welcome-1200.jpg"
                 alt="Ted sonriendo llegando al trabajo."
-                class="responsive-img">
+                class="responsive-img"
+                width="1200"
+                height="675">
             </figure>
             <div class="richmond-wrapper">
                 <section class="a">
@@ -65,7 +72,9 @@
                                 src="./media/detalles/Ted_Lasso_Photo_020201.jpg"
                                 alt="El equipo de entrenadores del Richmond junto a Ted."
                                 class="responsive-img"
-                                loading="lazy">
+                                loading="lazy"
+                                width="1200"
+                                height="800">
                           </picture>
                         <figcaption>El estadio del AFC Richmond es el del Crystal Palace FC | <a href="https://tv.apple.com/es/" target="_blank">Apple TV+</a></figcaption>
                     </figure>  
@@ -89,7 +98,9 @@
                                 src="./media/detalles/Ted_Lasso_Photo_031104.jpg"
                                 alt="Ted paseando por su bonita calle en Richmond."
                                 class="responsive-img"
-                                loading="lazy">
+                                loading="lazy"
+                                width="1200"
+                                height="800">
                         </picture>
                         <figcaption>La calle de Ted, Paved Court | <a href="https://tv.apple.com/es/" target="_blank">Apple TV+</a></figcaption>
                     </figure>
@@ -107,15 +118,18 @@
                                 src="./media/detalles/Ted_Lasso_Photo_031135.jpg"
                                 alt="Ted y Pep Guardiola saludandose al terminar el encuentro que enfrentaba sus respectivos equipos."
                                 class="responsive-img"
-                                loading="lazy">
+                                loading="lazy"
+                                width="1200"
+                                height="675">
                         </picture>
                         <figcaption>El cameo más esperado de la serie | <a href="https://tv.apple.com/es/" target="_blank">Apple TV+</a></figcaption>
                     </figure>
                     <p>Aunque no haya salido en un episodio de la serie como tal, José Mourinho también realizó un cameo para promocionar la serie de Ted Lasso antes de su estreno. En dicho <i lang="en">sketch</i>, Ted empieza a preguntarle a José todo sobre el “fútbol inglés”, ya que este es muy diferente al "fútbol americano" que él conoce. Y es que recordemos que Ted es un entrenador de fútbol americano, y en la serie deberá entrenar un equipo de fútbol (o <i lang="en">soccer</i> como lo llaman los americanos).</p>
                     <figure>
-                        <div class="video-container">
+                        <lite-youtube videoid="eiUBRjTGUSY" params="controls=1"></lite-youtube>
+                        <!-- <div class="video-container">
                             <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/eiUBRjTGUSY?si=wa9nQdG75Do69WIR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="responsive-video"></iframe>
-                        </div>
+                        </div> -->
                         <figcaption>Una llamada inesperada | <a href="https://www.jmwriter.info/" target="_blank">John McDonnell</a>, <a href="https://www.dazn.com/en-ES/home" target="_blank">DAZN</a></figcaption>
                     </figure>
                     <p>En la serie aparecen otras caras conocidas del mundo del deporte como ex jugadores, reporteros o árbitros, pero los más reconocibles son estos dos.</p>
@@ -152,8 +166,11 @@
         <hr>
         <div class="footer-brand">
             <img src = "media/logo/grey-scale-logo.svg" loading="lazy" alt="Logo de la página compuesto por las siglas de esta y el bigote del entrenador Ted Lasso">
-            <p>2023 &copy; Ted Lasso Fans | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
+            <p>&copy; Ted Lasso Fans 2023 - <span id="currentYear"></span> | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
         </div>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

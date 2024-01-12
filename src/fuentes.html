@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/richmond-favicon.ico" type="image/x-icon">
     <title>Ted Lasso Fans | Fuentes y créditos</title>
     <meta name="author" content="Carla Martin">
     <meta name="description" content="Explora curiosidades, lugares y momentos de Ted Lasso en esta comunidad de fans de la serie.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    </noscript>
     <link rel="stylesheet" href="./styles/styles.scss">
 </head>
 <body>
@@ -110,8 +113,11 @@
         <hr>
         <div class="footer-brand">
             <img src = "media/logo/grey-scale-logo.svg" loading="lazy" alt="Logo de la página compuesto por las siglas de esta y el bigote del entrenador Ted Lasso">
-            <p>2023 &copy; Ted Lasso Fans | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
+            <p>&copy; Ted Lasso Fans 2023 - <span id="currentYear"></span> | <a href="https://tv.apple.com/es/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank">Página oficial de la serie en Apple TV+</a></p>   
         </div>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
