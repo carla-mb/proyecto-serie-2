@@ -1,12 +1,12 @@
 //configuración del slick carousel en index.html según pantallas
 
 $('.carousel').slick({
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     lazyLoad: 'ondemand',
     responsive: [
       {
